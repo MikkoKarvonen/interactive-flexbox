@@ -4,6 +4,8 @@
     justify-content: center;
 }
 
+/* Shapes */
+
 #shapes{
     width: 400px;
     height: 400px;
@@ -31,4 +33,15 @@
     width: 50px;
     height: 150px;
     background: #f3f333;
+}
+
+/* Controls */
+
+#controls ul{
+    list-style: none;
+    text-align: center;
+}
+
+button{
+    width: 100%;
 }
