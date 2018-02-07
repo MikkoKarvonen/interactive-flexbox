@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+/* Nav */
+
+.nav{
+    width: 100%;
+}
+
 /* Shapes */
 
 #shapes{
