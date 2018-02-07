@@ -57,18 +57,18 @@
 /* Controls */
 
 #controls{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly; 
 }
 
-#controls ul{
+#controls div{
     list-style: none;
     text-align: center;
-}
-
-button{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Style */

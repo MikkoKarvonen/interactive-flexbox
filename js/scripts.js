@@ -31,19 +31,19 @@ addStyles = function(){
 addStyles();
 
 $(document).ready(function() {
-    $('.flex-directions li button').click(function(e) {
+    $('.flex-directions a').click(function(e) {
         document.getElementById("shapes").style.flexDirection = this.textContent;
         addStyles();
     });
-    $('.flex-wrap li button').click(function(e) {
+    $('.flex-wrap a').click(function(e) {
         document.getElementById("shapes").style.flexWrap = this.textContent;
         addStyles();
     });
-    $('.justify-content li button').click(function(e) {
+    $('.justify-content a').click(function(e) {
         document.getElementById("shapes").style.justifyContent = this.textContent;
         addStyles();
     });
-    $('.align-items li button').click(function(e) {
+    $('.align-items a').click(function(e) {
         document.getElementById("shapes").style.alignItems = this.textContent;
         addStyles();
     });
