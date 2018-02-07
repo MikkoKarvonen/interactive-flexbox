@@ -70,15 +70,3 @@
     display: flex;
     flex-direction: column;
 }
-
-/* Style */
-
-.style{
-    background-color: #000;
-    color: #fff;
-    padding: 15px;
-}
-  
-.style span{
-    color: #33f333;
-}
