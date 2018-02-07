@@ -65,15 +65,21 @@ $(document).ready(function() {
         if (shapeList.length == 3){
             shapeList.push('<div class="fourthShape">ಠ╭╮ಠ</div>');
             drawShapes();
+            $('.deleteShape').removeClass('disabled');
         } else if (shapeList.length == 4) {
             shapeList.push('<div class="fifthShape">˘▾˘</div>');
             drawShapes();
+            $(this).addClass('disabled');
         }
     });
     $('.deleteShape').click(function(e) {
         if (shapeList.length >= 4){
             shapeList.pop();
             drawShapes();
+            $('.addShape').removeClass('disabled');
+        }
+        if (shapeList.length == 3){
+            $(this).addClass('disabled');
         }
     });
 });
