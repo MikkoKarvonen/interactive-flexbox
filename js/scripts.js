@@ -30,20 +30,34 @@ addStyles = function(){
 
 addStyles();
 
+removeActive = function(targetClass){
+    $.each($('.' + targetClass).find('a'), function (key, value){
+        $(value).removeClass("active");
+    });
+}
+
 $(document).ready(function() {
     $('.flex-directions a').click(function(e) {
+        removeActive('flex-directions');
+        $(this).addClass("active");
         document.getElementById("shapes").style.flexDirection = this.textContent;
         addStyles();
     });
     $('.flex-wrap a').click(function(e) {
+        removeActive('flex-wrap', this);
+        $(this).addClass("active");
         document.getElementById("shapes").style.flexWrap = this.textContent;
         addStyles();
     });
     $('.justify-content a').click(function(e) {
+        removeActive('justify-content', this);
+        $(this).addClass("active");
         document.getElementById("shapes").style.justifyContent = this.textContent;
         addStyles();
     });
     $('.align-items a').click(function(e) {
+        removeActive('align-items', this);
+        $(this).addClass("active");
         document.getElementById("shapes").style.alignItems = this.textContent;
         addStyles();
     });
