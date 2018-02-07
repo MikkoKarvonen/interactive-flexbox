@@ -1,7 +1,7 @@
 var shapeList = [
-	'<div class="firstShape"></div>',
-    '<div class="secondShape"></div>',
-    '<div class="thirdShape"></div>'
+	'<div class="firstShape">｡◕‿‿◕｡</div>',
+    '<div class="secondShape">ಥ﹏ಥ</div>',
+    '<div class="thirdShape">ᵔᴥᵔ</div>'
 ];
 
 drawShapes = function(){
@@ -49,10 +49,10 @@ $(document).ready(function() {
     });
     $('.addShape').click(function(e) {
         if (shapeList.length == 3){
-            shapeList.push('<div class="fourthShape"></div>');
+            shapeList.push('<div class="fourthShape">ಠ╭╮ಠ</div>');
             drawShapes();
         } else if (shapeList.length == 4) {
-            shapeList.push('<div class="fifthShape"></div>');
+            shapeList.push('<div class="fifthShape">˘▾˘</div>');
             drawShapes();
         }
     });
