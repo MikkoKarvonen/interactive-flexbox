@@ -30,4 +30,19 @@ $(document).ready(function() {
         document.getElementById("shapes").style.alignItems = this.textContent;
         addStyles();
     });
+    $('.addShape').click(function(e) {
+        if (shapeList.length == 3){
+            shapeList.push('<div class="fourthShape"></div>');
+            drawShapes();
+        } else if (shapeList.length == 4) {
+            shapeList.push('<div class="fifthShape"></div>');
+            drawShapes();
+        }
+    });
+    $('.deleteShape').click(function(e) {
+        if (shapeList.length >= 4){
+            shapeList.pop();
+            drawShapes();
+        }
+    });
 });

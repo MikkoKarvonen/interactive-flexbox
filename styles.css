@@ -36,6 +36,18 @@
     background: #f3f333;
 }
 
+.fourthShape {
+    width: 150px;
+    height: 150px;
+    background: #3333f3;
+}
+
+.fifthShape {
+    width: 50px;
+    min-height: 25px;
+    background: #ff0000;
+}
+
 /* Controls */
 
 #controls{
