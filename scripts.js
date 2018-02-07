@@ -13,6 +13,23 @@ drawShapes = function(){
 
 drawShapes();
 
+addStyles = function(){
+	var element = document.getElementById('shapes'),
+    style = window.getComputedStyle(element),
+    shapes_flex_direction = style.getPropertyValue('flex-direction'),
+    shapes_flex_wrap = style.getPropertyValue('flex-wrap'),
+    shapes_justify_content = style.getPropertyValue('justify-content'),
+    shapes_align_items = style.getPropertyValue('align-items'),
+    shapes_flex_flow = style.getPropertyValue('flex-flow');
+	document.getElementById("flex_flow_style").innerHTML = shapes_flex_flow;
+    document.getElementById("flex_wrap_style").innerHTML = shapes_flex_wrap;
+    document.getElementById("flex_direction_style").innerHTML = shapes_flex_direction;
+    document.getElementById("justify_content_style").innerHTML = shapes_justify_content;
+    document.getElementById("align_items_style").innerHTML = shapes_align_items;
+};
+
+addStyles();
+
 $(document).ready(function() {
     $('.flex-directions li button').click(function(e) {
         document.getElementById("shapes").style.flexDirection = this.textContent;

@@ -64,3 +64,15 @@
 button{
     width: 100%;
 }
+
+/* Style */
+
+.style{
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+}
+  
+.style span{
+    color: #33f333;
+}
